@@ -2,6 +2,7 @@ $this->uri->segment(1)
 $this->uri->segment(2)
 $this->load->view('header');
 
+<?php echo  $this->security->get_csrf_token_name(); ?>=<?php echo  $this->security->get_csrf_hash(); ?>
 
 
 public function uploadEpisodeMedia()
